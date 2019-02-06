@@ -20,4 +20,4 @@ education = ["Highschool Diploma", "Bachlor Degree", "Master's Degree", "Ph.D"]
          
   # print '.' if i % 1000 == 0
 end
-# puts
+puts
