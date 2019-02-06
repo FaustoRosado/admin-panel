@@ -15,7 +15,7 @@ education = ["Highschool Diploma", "Bachlor Degree", "Master's Degree", "Ph.D"]
         username: "#{Faker::Internet.user_name}#{i}",
           age: Faker::Number.number(2),
             birthday: Faker::Date.birthday,
-              education: "#{education[rand(1..3)]}"
+              education: "#{education[rand(0..3)]}"
                   )
          
   # print '.' if i % 1000 == 0
