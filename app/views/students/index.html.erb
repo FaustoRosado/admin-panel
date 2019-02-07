@@ -1,16 +1,16 @@
 <header>
-  <h1 class="h2">Customer Search</h1>
+  <h1 class="h2">Student Search</h1>
 </header>
 
 <section class="search-form">
-  <%= form_for :customers, method: :get do |f| %>
+  <%= form_for :students, method: :get do |f| %>
     <div class="input-group input-group-lg">
       <%= label_tag :keywords, nil, class: "sr-only" %>
       <%= text_field_tag: keywords, nil, 
            placeholder: "First Name, Last Name, or Email Address", 
            class: "form-control input-lg" %>
       <span class="input-group-btn">
-        <%= submit_tag "Find Customers",
+        <%= submit_tag "Find Students",
             class: "btn btn-primary btn-lg" %>
       </span>
     </div>
@@ -31,12 +31,12 @@
       </tr>
     </thead>
     <tbody>
-      <% @customers.each do |customer| %>
+      <% @students.each do |student| %>
         <tr>
-          <td><%= customer.first_name %></td>
-          <td><%= customer.last_name %></td>
-          <td><%= customer.email %></td>
-          <td><%= l customer.created_at.to_date %></td>
+          <td><%= student.first_name %></td>
+          <td><%= student.last_name %></td>
+          <td><%= student.email %></td>
+          <td><%= l student.created_at.to_date %></td>
         </tr>
     </tbody>  
   </table>
